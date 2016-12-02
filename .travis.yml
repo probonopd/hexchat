@@ -7,7 +7,7 @@ script:
     - ./autogen.sh --enable-textfe --with-theme-manager --enable-static-analysis --prefix=/app
     - make V=1 -j$(nproc)
     - sudo make install
-    - find /app
+    - find /app || true
 notifications:
     irc:
         channels: "chat.freenode.net#hexchat-devel"
