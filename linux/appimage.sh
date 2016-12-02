@@ -36,6 +36,7 @@ get_icon
 # Other appliation-specific finishing touches
 ########################################################################
 
+cp usr/share/icons/hicolor/scalable/apps/hexchat.svg .
 
 ########################################################################
 # Copy in the dependencies that cannot be assumed to be available
