@@ -8,6 +8,8 @@ script:
     - make V=1 -j$(nproc)
     - sudo make install
     - find /app || true
+after_success:
+    - bash -e linux/appimage.sh
 notifications:
     irc:
         channels: "chat.freenode.net#hexchat-devel"
