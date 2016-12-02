@@ -7,6 +7,7 @@
 ########################################################################
 
 export ARCH=$(arch)
+VER1=$(git describe --tags --always --abbrev=7)
 
 APP=HexChat
 LOWERAPP=${APP,,}
@@ -64,7 +65,7 @@ get_desktopintegration $LOWERAPP
 ########################################################################
 
 GLIBC_NEEDED=$(glibc_needed)
-VERSION=$TRAVIS_COMMIT-glibc$GLIBC_NEEDED
+VERSION=$VER1-glibc$GLIBC_NEEDED
 
 ########################################################################
 # Patch away absolute paths; it would be nice if they were relative
