@@ -6,15 +6,6 @@
 # For more information, see http://appimage.org/
 ########################################################################
 
-# Resulting AppImage is known to run on
-# CentOS-7-x86_64-LiveGNOME-1511.iso
-# debian-live-8.4.0-amd64-gnome-desktop.iso
-# elementaryos-0.4-stable-amd64.20160921.iso
-# Fedora-Workstation-Live-x86_64-24-1.2.iso
-# openSUSE-Tumbleweed-GNOME-Live-x86_64-Snapshot20160921-Media.iso
-# ubuntu-14.04.1-desktop-amd64.iso
-# xubuntu-16.04.1-desktop-amd64.iso
-
 export ARCH=$(arch)
 VER1=$(git describe --tags --always --abbrev=7)
 
